@@ -5,6 +5,7 @@
     <%- @getBlock("styles").toHTML() %>
 </head>
 <body>
+    <img src="/images/logo.gif" />
     <h1><%= @document.title %></h1>
     <%- @content %>
     <%- @getBlock("scripts").toHTML() %>
