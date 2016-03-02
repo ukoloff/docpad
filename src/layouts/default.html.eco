@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title><%= @document.title %> | My Website</title>
+    <title><%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %></title>
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
 </head>
