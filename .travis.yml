@@ -1,22 +1,12 @@
-# 2016 January 23
-# https://docpad.org/docs/deploy
-
-# Use the latest travis infrastructure
 sudo: false
-
-# We use node
 language: node_js
 node_js:
-  - 4
+- 4
 cache:
   directories:
-    - node_modules
-
-# Prepare and run our tests
-script: "npm test"
-
-# Deployment
-after_success: >
+  - node_modules
+script: npm test
+after_success: |
   if ([ ! -z "$DEPLOY_TOKEN" ] &&
       [ "$TRAVIS_BRANCH" == "$DEPLOY_BRANCH" ] &&
       [ -z "$TRAVIS_TAG" ] &&
@@ -31,12 +21,9 @@ after_success: >
   else
     echo "Skipped deploy"
   fi
-
-# Custom Configuration
-# travis encrypt --org "DEPLOY_USER=$GITHUB_USERNAME" --add env.global
-# travis encrypt --org "DEPLOY_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
 env:
   global:
-    - DEPLOY_BRANCH="master"  # this is the branch name that you want tested and deployed, set correctly
-    - DEPLOY_NAME="Travis CI Deployer"  # this is the name that is used for the deployment commit, set to whatever
-    - DEPLOY_EMAIL="deployer@travis-ci.org"  # this is the email that is used for the deployment commit, set to whatever
+  - DEPLOY_BRANCH="master"
+  - DEPLOY_NAME="Travis CI Deployer"
+  - DEPLOY_EMAIL="deployer@travis-ci.org"
+  - secure: K/oEpk5v5gW2sf22d6Gzu2/ZQb5miqLrZOywMQsLNv6lbKM/0gRvMdc0Q39JEYnCFFtqG+lfY2CY6eE7EGz9gWgwOFyFSFNyW9los9VaJ9Hn/J8fdLOIfNIhXeHbfqJLF4W8iA5NqgrFBDP2Pw2BU4MwGPOuVYpjQLbS340AvYfTNdaukubXyjqinmBLnVOEC8Ucxv7piqozzadGxZU2JmLY3LJrkYz+GZuQdNgTEYkZTWGtp6l3OQCkO26AzWjmnlSh6rJpruy2A5L/nJyfCR6vQq6xilbN4id1CHGXB4a/u5nvyuN0DlX1XZ02a1x9f4eXLhtRqpgeQIOlNIam7zDZKPw9a+cn6GypW9Ulec2+ixru4Fbp8MiF+xIlp52CgANyNBmyR1VX1cLE9qQ6ikWVdqMw869A71028jWDwRQihDgIDymOapGaOK2E7Yl0Xd+4JOg1lNL/HoRhRAwYPZlTiNf1AWyIVO2DWnZSdimBnvt+vzUC3mbKSxFOfwdN/89TW6Q5U/SXOatGfpwzkAJeZasmmsoPdPdlsUj9GTA8YOl8muNthCmswrtUMwKgAtNx+AQbe/ieXBxxLxngXBkNGlg2t3ApFwRIukcMejxCUG5fmW/6WAOWGR18GR0FGqSwoiXyUJ9dCpe+e+e5zI9jHrOqj1/6dd7632111u8=
