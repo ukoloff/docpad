@@ -7,6 +7,10 @@ docpadConfig = {
         site:
             title: "My Website"
 
+        getPreparedTitle: -> if @document.title
+                 "#{@document.title} | #{@site.title}"
+            else
+                 @site.title
 }
 
 # Export the DocPad Configuration
