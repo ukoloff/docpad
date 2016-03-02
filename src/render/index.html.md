@@ -4,4 +4,4 @@ layout: "default"
 isPage: true
 ---
 
-<p>Welcome to My Website!</p>
+Welcome to My Website!
