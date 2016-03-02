@@ -6,6 +6,15 @@
 </head>
 <body>
     <img src="/images/logo.gif" />
+<ul>
+    <% for page in @getCollection("html").findAll({isPage:true}).toJSON(): %>
+        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+            <a href="<%= page.url %>">
+                <%= page.title %>
+            </a>
+        </li>
+    <% end %>
+</ul>
     <h1><%= @document.title %></h1>
     <%- @content %>
     <%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/script.js"]).toHTML()  %>
