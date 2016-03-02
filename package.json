@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "New DocPad project without using a skeleton",
   "dependencies": {
-    "docpad": "~6.78.4"
+    "docpad": "~6.78.4",
+    "docpad-plugin-eco": "~2.1.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
