@@ -2,7 +2,7 @@
 <head>
     <title><%= @document.title %> | My Website</title>
     <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").toHTML() %>
+    <%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
 </head>
 <body>
     <img src="/images/logo.gif" />
