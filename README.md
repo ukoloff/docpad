@@ -1,4 +1,7 @@
-# Your [DocPad](http://docpad.org) Project
+# DocPad playground
 
-## License
-Copyright &copy; 2016+ All rights reserved.
+Test of various DocPad conceptions...
+
+## See also
+
+  * [Beginner Guide](http://docpad.org/docs/begin)
