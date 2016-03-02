@@ -2,7 +2,7 @@
 # http://docpad.org/docs/config
 
 # Define the DocPad Configuration
-docpadConfig = {
+docpadConfig = 
     templateData:
         site:
             title: "My Website"
@@ -11,7 +11,10 @@ docpadConfig = {
                  "#{@document.title} | #{@site.title}"
             else
                  @site.title
-}
+    collections:
+        pages: ->
+            @getCollection "html"
+            .findAllLive isPage:true
 
 # Export the DocPad Configuration
 module.exports = docpadConfig
