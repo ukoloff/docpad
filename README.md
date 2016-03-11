@@ -1,6 +1,6 @@
 # DocPad playground
 
-[![Build Status](https://travis-ci.org/ukoloff/docpad.svg?branch=master)](https://travis-ci.org/ukoloff/docpad)
+[![Build Status](https://travis-ci.org/ukoloff/docpad.ukoloff.tk.svg?branch=master)](https://travis-ci.org/ukoloff/docpad.ukoloff.tk)
 
 Test of various DocPad conceptions...
 
