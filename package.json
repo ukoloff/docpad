@@ -5,7 +5,7 @@
   "dependencies": {
     "docpad": "~6.78.4",
     "docpad-plugin-coffeescript": "~2.5.0",
-    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-stylus": "~2.11.0",
     "docpad-plugin-without": "~2.1.0"
@@ -18,7 +18,6 @@
     "deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
   },
   "devDependencies": {
-    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-livereload": "~2.7.1"
   }
 }
