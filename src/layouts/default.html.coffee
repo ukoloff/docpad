@@ -1,9 +1,15 @@
+Block = (name, fn)=>
+  z = @getBlock name
+  z = fn.call z if 'function'==typeof fn
+  raw z.toHTML()
+
 (tag "!DOCTYPE", true) html: true
 html ->
   head ->
     title @getPreparedTitle()
-    raw @getBlock("meta").toHTML()
-    raw @getBlock("styles").add(["/styles/style.css"]).toHTML()
+    Block "meta"
+    Block "styles", ->
+      @add ["/styles/style.css"]
   body ->
     img src: "/images/logo.gif"
 
@@ -17,4 +23,5 @@ html ->
 
     h1 @document.title
     raw @content
-    raw @getBlock("scripts").add(["/vendor/jquery.js", "/scripts/script.js"]).toHTML()
+    Block "scripts", ->
+      @add ["/vendor/jquery.js", "/scripts/script.js"]
