@@ -1,8 +1,0 @@
----
-layout: mine
-status: error
----
-div
-  class: "alert alert-#{@document.status}"
-  -> i class: "fa fa-#{@document.status}"
-  "Oops!"
