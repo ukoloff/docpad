@@ -11,7 +11,7 @@ html ->
     Block "styles", ->
       @add ["/styles/style.css"]
   body ->
-    img src: "/images/logo.gif"
+    raw @partial "img"
 
     ul ->
       for page in @getCollection("pages").toJSON()
