@@ -11,15 +11,8 @@ html ->
     Block "styles", ->
       @add ["/styles/style.css"]
   body ->
-    img src: "/images/logo.gif"
-
-    ul ->
-      for page in @getCollection("pages").toJSON()
-        li
-          class: if page.id is @document.id then 'active' else 'inactive'
-          ->a
-            href: page.url
-            page.title
+    raw @partial "img"
+    raw @partial "links"
 
     h1 @document.title
     raw @content
