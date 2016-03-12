@@ -6,7 +6,9 @@
     "docpad": "~6.78.4",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-less": "~2.4.1",
     "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-stylus": "~2.11.0",
     "docpad-plugin-without": "~2.1.0"
   },
