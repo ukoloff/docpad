@@ -13,7 +13,7 @@ nav class: "navbar navbar-inverse navbar-static-top", ->
       a
         class: "navbar-brand"
         'Hello!'
-    div class: "collapse navbar-collapse", ->
+    div id: "navbar", class: "collapse navbar-collapse", ->
       ul class: "nav navbar-nav", ->
         for page in @getCollection("pages").toJSON()
           li
