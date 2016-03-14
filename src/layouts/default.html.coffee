@@ -12,7 +12,7 @@ html ->
       name: "viewport"
       content: "width=device-width, initial-scale=1"
     Block "styles", ->
-      @add ["/the.css", "/styles/style.css"]
+      @add ["/the.css"]
   body ->
     raw @partial "navbar"
     div class: 'container-fluid', ->
@@ -22,4 +22,4 @@ html ->
       raw @content
 
     Block "scripts", ->
-      @add ["/vendor/jquery.js", "/vendor/bootstrap.min.js", "/scripts/script.js"]
+      @add ["/vendor/jquery.js", "/vendor/bootstrap.min.js"]
