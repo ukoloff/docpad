@@ -10,28 +10,13 @@ html ->
     Block "meta"
     Block "styles", ->
       @add ["/the.css", "/styles/style.css"]
-  body -> div class: 'container-fluid', ->
+  body ->
+    raw @partial "navbar"
+    div class: 'container-fluid', ->
+      raw @partial "img"
 
-    nav class: "navbar navbar-inverse navbar-static-top", ->
-      div class: "container-fluid", ->
-        div class: "navbar-header", ->
-          button
-            type: "button"
-            class: "navbar-toggle collapsed"
-            data:
-              toggle: "collapse"
-              target: "#navbar"
-            ->
-            span class: "sr-only", 'Toggle navigation'
-            span class: "icon-bar" for i in [1..3]
-          a
-            class: "navbar-brand"
-            'Hello!'
+      h1 @document.title
+      raw @content
 
-    raw @partial "img"
-    raw @partial "links"
-
-    h1 @document.title
-    raw @content
     Block "scripts", ->
       @add ["/vendor/jquery.js", "/scripts/script.js"]
