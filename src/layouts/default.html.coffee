@@ -9,8 +9,8 @@ html ->
     title @getPreparedTitle()
     Block "meta"
     Block "styles", ->
-      @add ["/styles/style.css"]
-  body ->
+      @add ["/the.css", "/styles/style.css"]
+  body -> div class: 'container-fluid', ->
     img src: "/images/logo.gif"
 
     ul ->
