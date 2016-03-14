@@ -8,8 +8,8 @@ nav class: "navbar navbar-inverse navbar-static-top", ->
           toggle: "collapse"
           target: "#navbar"
         ->
-        span class: "sr-only", 'Toggle navigation'
-        span class: "icon-bar" for i in [1..3]
+          span class: "sr-only", 'Toggle navigation'
+          span class: "icon-bar" for i in [1..3]
       a
         class: "navbar-brand"
         'Hello!'
