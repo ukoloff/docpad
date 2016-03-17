@@ -13,3 +13,7 @@ as [CNAME](/src/static/CNAME).
 
   * [Beginner Guide](http://docpad.org/docs/begin)
   * [Deploy](http://docpad.org/docs/deploy)
+  * [Plugins](http://docpad.org/docs/plugins)
+    - [less](https://github.com/docpad/docpad-plugin-less/)
+    - [partials](https://github.com/docpad/docpad-plugin-partials/)
+    - [without](https://github.com/ukoloff/docpad-plugin-without)
