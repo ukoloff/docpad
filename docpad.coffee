@@ -16,7 +16,7 @@
     @getCollection "html"
     .findAllLive isPage:true
     .on "add", (model) ->
-        model.setMetaDefaults layout:"default"
+      model.setMetaDefaults layout:"default"
 
 @plugins =
   less:

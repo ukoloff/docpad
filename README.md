@@ -14,6 +14,11 @@ as [CNAME](/src/static/CNAME).
   * [Beginner Guide](http://docpad.org/docs/begin)
   * [Deploy](http://docpad.org/docs/deploy)
   * [Plugins](http://docpad.org/docs/plugins)
-    - [less](https://github.com/docpad/docpad-plugin-less/)
-    - [partials](https://github.com/docpad/docpad-plugin-partials/)
+    - [less](https://github.com/docpad/docpad-plugin-less)
+    - [partials](https://github.com/docpad/docpad-plugin-partials)
+    - [webpack](https://github.com/RobLoach/docpad-plugin-webpack)
     - [without](https://github.com/ukoloff/docpad-plugin-without)
+  * Packages
+    - [bootstrap](https://github.com/twbs/bootstrap)
+    - [bootswatch](https://github.com/thomaspark/bootswatch)
+    - [font-awesome](https://github.com/FortAwesome/Font-Awesome)
