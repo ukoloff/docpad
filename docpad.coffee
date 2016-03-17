@@ -17,3 +17,7 @@ module.exports =
             .findAllLive isPage:true
             .on "add", (model) ->
                 model.setMetaDefaults layout:"default"
+
+    plugins:
+        less:
+            parseOptions: paths: ["#{__dirname}/node_modules"]
