@@ -1,8 +1,16 @@
 {
-  "name": "no-skeleton.docpad",
+  "name": "docpad.ukoloff.tk",
   "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
+  "description": "DocPad playground",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukoloff/docpad.ukoloff.tk.git"
+  },
+  "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6",
+    "font-awesome": "^4.5.0",
     "docpad": "~6.78.4",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.4",
