@@ -1,13 +1,13 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
-# Define the DocPad Configuration
-docpadConfig = 
+module.exports = 
     templateData:
         site:
             title: "My Website"
 
-        getPreparedTitle: -> if @document.title
+        getPreparedTitle: -> 
+            if @document.title
                  "#{@document.title} | #{@site.title}"
             else
                  @site.title
@@ -17,6 +17,3 @@ docpadConfig =
             .findAllLive isPage:true
             .on "add", (model) ->
                 model.setMetaDefaults layout:"default"
-
-# Export the DocPad Configuration
-module.exports = docpadConfig
