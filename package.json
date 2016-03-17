@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "New DocPad project without using a skeleton",
   "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6",
     "docpad": "~6.78.4",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.4",
@@ -10,7 +12,8 @@
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-stylus": "~2.11.0",
-    "docpad-plugin-without": "~2.1.0"
+    "docpad-plugin-without": "~2.1.0",
+    "font-awesome": "^4.5.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
