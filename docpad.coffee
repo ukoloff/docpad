@@ -28,12 +28,5 @@ values = (map)->
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
   webpack:
-    module:
-      loaders: values
-        coffee:
-          test: /[.]coffee$/
-          loader: "coffee-loader"
-    resolve:
-      extensions: ["", ".js", ".coffee"]
     plugins: values
       minimize: new webpack.optimize.UglifyJsPlugin minimize: true

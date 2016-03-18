@@ -1,4 +1,8 @@
 ---
 webpack: true
 ---
-require '../webpack'
+$ = require 'jquery'
+do ->
+  @$ = @jQuery = $
+
+require "bootstrap"
