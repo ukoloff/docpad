@@ -1,0 +1,4 @@
+---
+webpack: true
+---
+require '../webpack'
