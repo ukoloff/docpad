@@ -6,6 +6,8 @@ webpack = require "webpack"
 values = (map)->
   v for k, v of map
 
+#@poweredByDocPad = false
+
 @templateData =
   site:
     title: "My Website"
