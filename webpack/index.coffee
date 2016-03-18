@@ -1,1 +1,6 @@
-console.log 'Hi!'
+$ = require 'jquery'
+do ->
+  @$ = @jQuery = $
+
+$ ->
+  console.log "Hi there!"

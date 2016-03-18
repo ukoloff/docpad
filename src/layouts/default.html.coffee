@@ -13,6 +13,8 @@ html ->
       content: "width=device-width, initial-scale=1"
     Block "styles", ->
       @add ["/the.css"]
+    Block "scripts", ->
+      @add ["/the.js"]
   body ->
     raw @partial "navbar"
     div class: 'container-fluid', ->
@@ -20,6 +22,3 @@ html ->
 
       h1 @document.title
       raw @content
-
-    Block "scripts", ->
-      @add ["/vendor/jquery.js", "/vendor/bootstrap.min.js"]
