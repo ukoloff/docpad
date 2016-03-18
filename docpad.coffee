@@ -1,8 +1,6 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
-webpack = require "webpack"
-
 values = (map)->
   v for k, v of map
 
@@ -29,6 +27,3 @@ values = (map)->
   less:
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
-  webpack:
-    plugins: values
-      minimize: new webpack.optimize.UglifyJsPlugin minimize: true
