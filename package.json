@@ -22,7 +22,8 @@
     "docpad-plugin-without": "~2.1.0",
     "font-awesome": "^4.5.0",
     "jquery": "^1.12.1",
-    "json-loader": "^0.5.4"
+    "json-loader": "^0.5.4",
+    "ncp": "^2.0.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
