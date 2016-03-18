@@ -1,6 +1,8 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
+webpack = require "webpack"
+
 values = (map)->
   v for k, v of map
 
@@ -33,3 +35,5 @@ values = (map)->
           loader: "coffee-loader"
     resolve:
       extensions: ["", ".js", ".coffee"]
+    plugins: values
+      minimize: new webpack.optimize.UglifyJsPlugin minimize: true
