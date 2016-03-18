@@ -27,3 +27,13 @@ values = (map)->
   less:
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
+  webpack:
+    optimize:
+      minimize: true
+
+@environments =
+  development:
+    plugins:
+      webpack:
+        optimize:
+          minimize: false
