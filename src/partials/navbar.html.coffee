@@ -20,5 +20,5 @@ nav class: "navbar navbar-inverse navbar-static-top", ->
           li
             class: if page.id is @document.id then 'active' else 'inactive'
             ->a
-              href: page.url
+              href: page.url.replace /index[.]html$/, ''
               page.title
