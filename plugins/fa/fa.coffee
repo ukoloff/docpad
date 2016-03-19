@@ -6,6 +6,6 @@ module.exports = (BasePlugin) ->
     name: "fa"
 
     writeAfter: ->
-      src = path.join require.resolve('font-awesome/package'), '../fonts'
-      dst = path.join __dirname, '../../out/fonts'
+      src = path.join require.resolve('font-awesome/package'), '..', 'fonts'
+      dst = path.join  @docpad.config.outPath, 'fonts'
       ncp src, dst
