@@ -12,7 +12,8 @@ nav class: "navbar navbar-inverse navbar-static-top", ->
           span class: "icon-bar" for i in [1..3]
       a
         class: "navbar-brand"
-        'Hello!'
+        -> i class: "fa fa-paw"
+        ' Hello!'
     div id: "navbar", class: "collapse navbar-collapse", ->
       ul class: "nav navbar-nav", ->
         for page in @getCollection("pages").toJSON()
