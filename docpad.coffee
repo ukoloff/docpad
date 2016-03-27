@@ -1,9 +1,6 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
-values = (map)->
-  v for k, v of map
-
 #@poweredByDocPad = false
 
 @templateData =
@@ -27,13 +24,3 @@ values = (map)->
   less:
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
-  webpack:
-    optimize:
-      minimize: true
-
-@environments =
-  development:
-    plugins:
-      webpack:
-        optimize:
-          minimize: false
