@@ -5,8 +5,10 @@ node_js:
 cache:
   directories:
   - node_modules
-script: npm test
-after_success: script/github
+before_script:
+  - npm prune
+  - npm dedupe
+deploy: script/github
 env:
   global:
   - DEPLOY_BRANCH="master"
