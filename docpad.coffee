@@ -24,3 +24,5 @@
   less:
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
+  webpack:
+    entry: 'the'
