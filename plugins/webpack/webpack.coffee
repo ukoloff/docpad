@@ -1,5 +1,6 @@
 path = require 'path'
 webpack = require 'webpack'
+{TaskGroup} = require 'taskgroup'
 
 values = (map)->
   v for k, v of map
@@ -18,10 +19,9 @@ module.exports = (BasePlugin) ->
             loader: "coffee-loader"
         resolve:
           extensions: ["", ".js", ".coffee"]
-      plugins: [
-        new webpack.optimize.UglifyJsPlugin
-        new webpack.optimize.OccurenceOrderPlugin
-      ]
+      plugins: values
+        minimize: new webpack.optimize.UglifyJsPlugin
+        reorder: new webpack.optimize.OccurenceOrderPlugin
       environments:
         development:
           debug: true
