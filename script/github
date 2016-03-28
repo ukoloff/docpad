@@ -1,1 +1,16 @@
 #!/bin/sh
+
+if ([ ! -z "$DEPLOY_TOKEN" ] &&
+    [ "$TRAVIS_BRANCH" == "$DEPLOY_BRANCH" ] &&
+    [ -z "$TRAVIS_TAG" ] &&
+    [ "$TRAVIS_PULL_REQUEST" == "false" ]); then
+  echo "Deploying"
+  git config user.email "$DEPLOY_EMAIL"
+  git config user.name "$DEPLOY_NAME"
+  git remote rm origin
+  git remote add origin "https://$DEPLOY_USER:$DEPLOY_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
+  npm run-script deploy
+  echo "Deployed"
+else
+  echo "Skipped deploy
+fi
