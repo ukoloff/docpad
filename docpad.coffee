@@ -32,4 +32,4 @@ path = require 'path'
       dst: 'fonts'
   webpack:
     entry:
-      the: './the.coffee'
+      the: './the'

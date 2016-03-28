@@ -17,8 +17,8 @@ module.exports = (BasePlugin) ->
           coffee:
             test: /[.]coffee$/
             loader: "coffee-loader"
-        resolve:
-          extensions: ["", ".js", ".coffee"]
+      resolve:
+        extensions: ["", ".js", ".coffee"]
       plugins: values
         minimize: new webpack.optimize.UglifyJsPlugin
         reorder: new webpack.optimize.OccurenceOrderPlugin
