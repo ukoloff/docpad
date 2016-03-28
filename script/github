@@ -12,5 +12,5 @@ if ([ ! -z "$DEPLOY_TOKEN" ] &&
   npm run-script deploy
   echo "Deployed"
 else
-  echo "Skipped deploy
+  echo "Skipped deploy"
 fi
