@@ -6,6 +6,8 @@ values = (map)->
 
 #@poweredByDocPad = false
 
+@regeneratePaths = ['raw']
+
 @templateData =
   site:
     title: "My Website"
