@@ -8,7 +8,7 @@ cache:
 before_script:
   - npm prune
   - npm dedupe
-deploy: script/github
+after_success: script/github
 env:
   global:
   - DEPLOY_BRANCH="master"
