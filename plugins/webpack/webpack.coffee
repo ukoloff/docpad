@@ -1,6 +1,5 @@
 path = require 'path'
 webpack = require 'webpack'
-{TaskGroup} = require 'taskgroup'
 
 values = (map)->
   v for k, v of map
@@ -46,5 +45,13 @@ module.exports = (BasePlugin) ->
 
       webpack config
       .run (err, stats)->
-        docpad.log 'info', stats.toString colors: true
+        docpad.log 'info', stats.toString
+          colors: true
+          hash: false
+          # timings: false
+          assets: true
+          chunks: false
+          chunkModules: false
+          modules: false
+          children: true
         do next
