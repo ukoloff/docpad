@@ -25,6 +25,7 @@ module.exports = (BasePlugin) ->
       environments:
         development:
           debug: true
+          devtool: 'cheap-source-map'
           output:
             pathinfo: true
           plugins: []
