@@ -43,6 +43,8 @@ module.exports = (BasePlugin) ->
       delete config.environments
       config.context = path.resolve cfg.srcPath, 'webpack'
       (config.output ||= {}).path = cfg.outPath
-      webpack config, (err, stats)->
+
+      webpack config
+      .run (err, stats)->
         docpad.log 'info', stats.toString colors: true
         do next
