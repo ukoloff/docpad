@@ -25,7 +25,7 @@ path = require 'path'
 @plugins =
   less:
     parseOptions:
-      paths: ["#{__dirname}/node_modules"]
+      paths: path.join __dirname, "node_modules"
   xcopy:
     fonts:
       src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
