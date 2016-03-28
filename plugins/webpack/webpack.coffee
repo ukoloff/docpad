@@ -9,6 +9,8 @@ module.exports = (BasePlugin) ->
     name: "webpack"
 
     config:
+      output:
+        filename: '[name].js'
       module:
         loaders: values
           coffee:
@@ -16,9 +18,13 @@ module.exports = (BasePlugin) ->
             loader: "coffee-loader"
         resolve:
           extensions: ["", ".js", ".coffee"]
-      plugins: [new webpack.optimize.UglifyJsPlugin]
+      plugins: [
+        new webpack.optimize.UglifyJsPlugin
+        new webpack.optimize.OccurenceOrderPlugin
+      ]
       environments:
         development:
+          debug: true
           output:
             pathinfo: true
           plugins: []
@@ -32,3 +38,6 @@ module.exports = (BasePlugin) ->
       (config.output ||= {}).path = cfg.outPath
       console.log ""
       console.log "@@@@@@@@@@@@@@@@@@@", config
+      webpack config, (err, stats)->
+        console.log "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW", err
+        docpad.log 'info', stats.toString colors: true

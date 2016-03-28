@@ -31,4 +31,5 @@ path = require 'path'
       src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
       dst: 'fonts'
   webpack:
-    entry: 'the'
+    entry:
+      the: './the.coffee'
