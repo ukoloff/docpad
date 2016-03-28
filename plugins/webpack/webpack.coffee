@@ -5,6 +5,9 @@ webpack = require 'webpack'
 values = (map)->
   v for k, v of map
 
+brk = (s)->
+  s.split ' '
+
 module.exports = (BasePlugin) ->
   BasePlugin.extend
     name: "webpack"
@@ -21,7 +24,7 @@ module.exports = (BasePlugin) ->
             test: /[.](litcoffee|coffee[.]md)$/
             loader: "coffee-loader?literate"
       resolve:
-        extensions: ["", ".js", ".coffee", ".litcoffee", ".coffee.md"]
+        extensions: brk " .js .coffee .litcoffee .coffee.md"
       plugins: values
         minimize: new webpack.optimize.UglifyJsPlugin
         reorder: new webpack.optimize.OccurenceOrderPlugin
