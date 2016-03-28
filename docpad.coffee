@@ -1,12 +1,7 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
-values = (map)->
-  v for k, v of map
-
 #@poweredByDocPad = false
-
-@regeneratePaths = ['raw']
 
 @templateData =
   site:
