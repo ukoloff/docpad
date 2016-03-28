@@ -1,6 +1,8 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
+path = require 'path'
+
 #@poweredByDocPad = false
 
 @templateData =
@@ -24,6 +26,10 @@
   less:
     parseOptions:
       paths: ["#{__dirname}/node_modules"]
+  xcopy:
+    fonts:
+      src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
+      dst: 'fonts'
   webpack:
     optimize:
       minimize: true
