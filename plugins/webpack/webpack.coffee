@@ -36,15 +36,13 @@ module.exports = (BasePlugin) ->
             pathinfo: true
           plugins: []
 
-    writeAfter: ->
+    writeAfter: (opts, next)->
       docpad = @docpad
       cfg = docpad.getConfig()
       config = @getConfig()
       delete config.environments
       config.context = path.resolve cfg.srcPath, 'webpack'
       (config.output ||= {}).path = cfg.outPath
-      console.log ""
-      console.log "@@@@@@@@@@@@@@@@@@@", config
       webpack config, (err, stats)->
-        console.log "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW", err
         docpad.log 'info', stats.toString colors: true
+        do next
