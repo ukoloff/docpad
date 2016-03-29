@@ -45,6 +45,9 @@ module.exports = (BasePlugin) ->
 
       webpack config
       .run (err, stats)->
+        if err
+          docpad.log 'error', "Webpack error: #{err}!"
+
         docpad.log 'info', stats.toString
           colors: true
           hash: false
