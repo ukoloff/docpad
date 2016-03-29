@@ -1,8 +1,6 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
-path = require 'path'
-
 #@poweredByDocPad = false
 
 @templateData =
@@ -25,8 +23,10 @@ path = require 'path'
 @plugins =
   less:
     parseOptions:
-      paths: path.join __dirname, "node_modules"
+      paths: "#{__dirname}/node_modules"
   copy:
+    raw:
+      src: 'raw'
     fonts:
       src: '../node_modules/font-awesome/fonts'
       out: 'fonts'
