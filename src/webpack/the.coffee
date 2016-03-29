@@ -1,6 +1,3 @@
----
-webpack: true
----
 $ = require 'jquery'
 do ->
   @$ = @jQuery = $

@@ -31,12 +31,5 @@ path = require 'path'
       src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
       dst: 'fonts'
   webpack:
-    optimize:
-      minimize: true
-
-@environments =
-  development:
-    plugins:
-      webpack:
-        optimize:
-          minimize: false
+    entry:
+      the: './the'
