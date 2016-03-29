@@ -14,6 +14,7 @@ as [CNAME](/src/static/CNAME).
   * [Beginner Guide](http://docpad.org/docs/begin)
   * [Deploy](http://docpad.org/docs/deploy)
   * [Plugins](http://docpad.org/docs/plugins)
+    - [raw](https://github.com/docpad/docpad-plugin-raw) - not used
     - [copy](https://github.com/almero-digital-marketing/docpad-plugin-copy)
     - [less](https://github.com/docpad/docpad-plugin-less)
     - [partials](https://github.com/docpad/docpad-plugin-partials)
