@@ -25,7 +25,7 @@ module.exports = (BasePlugin) ->
       resolve:
         extensions: brk " .js .coffee .litcoffee .coffee.md"
       plugins: values
-        minimize: new webpack.optimize.UglifyJsPlugin
+        minimize: new webpack.optimize.UglifyJsPlugin comments: false
         reorder: new webpack.optimize.OccurenceOrderPlugin
       environments:
         development:
