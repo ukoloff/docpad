@@ -22,5 +22,6 @@ as [CNAME](/src/static/CNAME).
     - [without](https://github.com/ukoloff/docpad-plugin-without)
   * Packages
     - [bootstrap](https://github.com/twbs/bootstrap)
+      + [Bootstrap Dropdown Menus Enhancement](https://github.com/behigh/bootstrap_dropdowns_enhancement)
     - [bootswatch](https://github.com/thomaspark/bootswatch)
     - [font-awesome](https://github.com/FortAwesome/Font-Awesome)
