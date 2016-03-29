@@ -26,10 +26,10 @@ path = require 'path'
   less:
     parseOptions:
       paths: path.join __dirname, "node_modules"
-  xcopy:
+  copy:
     fonts:
-      src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
-      dst: 'fonts'
+      src: '../node_modules/font-awesome/fonts'
+      out: 'fonts'
   webpack:
     entry:
       the: './the'
