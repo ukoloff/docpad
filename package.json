@@ -17,7 +17,6 @@
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-without": "~2.1.0",
-    "expose-loader": "^0.7.1",
     "font-awesome": "^4.5.0",
     "jquery": "^1.12.1",
     "ncp": "^2.0.0",

@@ -1,2 +1,5 @@
-require 'expose?$!expose?jQuery!jquery'
+$ = require 'jquery'
+do ->
+  @$ = @jQuery = $
+
 require "bootstrap"
