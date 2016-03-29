@@ -7,7 +7,7 @@ Test of various DocPad conceptions...
 ## Deploy
 
 Deployed to [GitHub Pages](https://pages.github.com/) using [Travis CI](https://travis-ci.org/)
-as [CNAME](/src/static/CNAME).
+as [CNAME](/src/raw/CNAME). [Navigate](http://docpad.ukoloff.tk)!
 
 ## See also
 
