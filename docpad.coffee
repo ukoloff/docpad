@@ -30,6 +30,9 @@ path = require 'path'
     fonts:
       src: path.join require.resolve('font-awesome/package'), '..', 'fonts'
       dst: 'fonts'
+    katex:
+      src: path.join __dirname, "node_modules/katex-all/dist/fonts"
+      dst: 'fonts'
   webpack:
     entry:
       the: './the'
