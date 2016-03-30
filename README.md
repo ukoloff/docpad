@@ -26,3 +26,4 @@ as [CNAME](/src/raw/CNAME). [Navigate](http://docpad.ukoloff.tk)!
       + [Bootstrap Dropdown Menus Enhancement](https://github.com/behigh/bootstrap_dropdowns_enhancement)
     - [bootswatch](https://github.com/thomaspark/bootswatch)
     - [font-awesome](https://github.com/FortAwesome/Font-Awesome)
+    - [KaTeX](https://github.com/Khan/KaTeX)
