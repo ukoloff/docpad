@@ -14,8 +14,8 @@ as [CNAME](/src/raw/CNAME). [Navigate](http://docpad.ukoloff.tk)!
   * [Beginner Guide](http://docpad.org/docs/begin)
   * [Deploy](http://docpad.org/docs/deploy)
   * [Plugins](http://docpad.org/docs/plugins)
-    - [raw](https://github.com/docpad/docpad-plugin-raw) -
-      not used, [reimplemented](/plugins/xcopy)
+    - [raw](https://github.com/docpad/docpad-plugin-raw) - not used
+    - [copy](https://github.com/almero-digital-marketing/docpad-plugin-copy)
     - [less](https://github.com/docpad/docpad-plugin-less)
     - [partials](https://github.com/docpad/docpad-plugin-partials)
     - [webpack](https://github.com/RobLoach/docpad-plugin-webpack) -
@@ -26,3 +26,4 @@ as [CNAME](/src/raw/CNAME). [Navigate](http://docpad.ukoloff.tk)!
       + [Bootstrap Dropdown Menus Enhancement](https://github.com/behigh/bootstrap_dropdowns_enhancement)
     - [bootswatch](https://github.com/thomaspark/bootswatch)
     - [font-awesome](https://github.com/FortAwesome/Font-Awesome)
+    - [KaTeX](https://github.com/Khan/KaTeX)
