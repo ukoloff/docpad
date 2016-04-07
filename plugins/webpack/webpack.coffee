@@ -1,11 +1,19 @@
 path = require 'path'
 webpack = require 'webpack'
+extendr = require 'extendr'
 
 values = (map)->
   v for k, v of map
 
 brk = (s)->
   s.split ' '
+
+plugins =
+  globals: new webpack.ProvidePlugin
+    $: 'jquery'
+    jQuery: 'jquery'
+    katex: 'katex-all'
+    withOut: 'without'
 
 module.exports = (BasePlugin) ->
   BasePlugin.extend
@@ -24,16 +32,17 @@ module.exports = (BasePlugin) ->
             loader: "coffee-loader?literate"
       resolve:
         extensions: brk " .js .coffee .litcoffee .coffee.md"
-      plugins: values
+      plugins: values extendr.extend
         minimize: new webpack.optimize.UglifyJsPlugin comments: false
         reorder: new webpack.optimize.OccurenceOrderPlugin
+        plugins
       environments:
         development:
           debug: true
           devtool: 'cheap-source-map'
           output:
             pathinfo: true
-          plugins: []
+          plugins: values plugins
 
     writeAfter: (opts, next)->
       docpad = @docpad
