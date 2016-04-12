@@ -1,6 +1,6 @@
 path = require 'path'
 webpack = require 'webpack'
-extendr = require 'extendr'
+extend = require 'extend'
 
 values = (map)->
   v for k, v of map
@@ -32,7 +32,7 @@ module.exports = (BasePlugin) ->
             loader: "coffee-loader?literate"
       resolve:
         extensions: brk " .js .coffee .litcoffee .coffee.md"
-      plugins: values extendr.extend
+      plugins: values extend
         minimize: new webpack.optimize.UglifyJsPlugin comments: false
         reorder: new webpack.optimize.OccurenceOrderPlugin
         plugins
