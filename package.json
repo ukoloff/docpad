@@ -20,7 +20,7 @@
     "docpad-plugin-partials": "~2.9.2",
     "docpad-plugin-without": "~2.1.0",
     "extend": "^3.0.0",
-    "font-awesome": "^4.5.0",
+    "font-awesome": "^4.6.0",
     "jquery": "^1.12.1",
     "katex-all": "^0.6.0-pre",
     "webpack": "^1.12.14"
