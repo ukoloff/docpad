@@ -23,6 +23,7 @@
     "font-awesome": "^4.6.0",
     "jquery": "^1.12.1",
     "katex-all": "^0.6.0-pre",
+    "respond.js": "^1.4.2",
     "webpack": "^1.12.14"
   },
   "main": "node_modules/.bin/docpad-server",
