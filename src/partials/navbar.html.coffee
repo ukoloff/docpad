@@ -22,3 +22,6 @@ nav class: "navbar navbar-inverse navbar-static-top", ->
             ->a
               href: page.url.replace /index[.]html$/, ''
               page.title
+        li -> a
+          href: '/dbs'
+          'DBS'
